@@ -1,0 +1,51 @@
+html{
+  background-color:black;
+}
+body{
+  position:relative;
+  width:450px;
+  height:450px;
+  margin:0 auto;
+  margin-top:100px;
+  font-size:0;
+}
+div{
+  position:absolute;
+  top:0;
+  left:0;
+}
+hr{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  display:inline-block;
+  width:50px;
+  height:50px;
+  border-color:rgba(255,255,255,0.1);
+  border-style:dashed;
+  border-width:0 1px 1px 0;
+  opacity:0.3;
+}
+.h hr:nth-of-type(-n + 27),
+.v hr:nth-of-type(9n + 1),
+.v hr:nth-of-type(9n + 2),
+.v hr:nth-of-type(9n + 3){
+  background-color:#f00;
+}
+
+.h hr:nth-of-type(n + 28):nth-of-type(-n + 54),
+.v hr:nth-of-type(9n + 4),
+.v hr:nth-of-type(9n + 5),
+.v hr:nth-of-type(9n + 6){
+  background-color:#0f0;
+}
+
+.h hr:nth-last-of-type(-n + 27),
+.v hr:nth-of-type(9n + 7),
+.v hr:nth-of-type(9n + 8),
+.v hr:nth-of-type(9n + 9){
+  background-color:#00f;
+}
+.h hr:nth-of-type(2n){
+  opacity:0.7;
+}
